@@ -1,0 +1,29 @@
+package com.example.demo.dto;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+public class AccountDTO {
+
+	
+	private int accountId;
+	private String firstName;
+	private String lastName;
+	private String address;
+	private int mobile;
+
+	public AccountDTO(int accountId, String firstName, String lastName, String address, int mobile) {
+		super();
+		this.accountId = accountId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.mobile = mobile;
+	}
+	
+	public AccountDTO() {
+		
+	}
+}
